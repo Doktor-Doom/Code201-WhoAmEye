@@ -7,7 +7,33 @@
 // - Is Andre an only child
 // - Is Andre tall, i reach all of the shelves
 // - Does Andre like to dance
-//Question 6 wrapped in a function
+
+
+//Q1 Origin
+function wieBenJe(){
+  var usernaamAntwoord = prompt('How\'s it going? What\'s your name?');
+  // console.log('usernaamAntwoord :' + usernaamAntwoord);
+
+  alert('Cool Beans,' + usernaamAntwoord + 'hope you\'re having a good day');
+}
+wieBenJe();
+//Q1 Function.. I'd like to add a time of day loop here to tailor the greeting to the time of day..
+
+
+//Q2 Origin
+function waarVanDan(){
+  var seattleOrigin = prompt('Am I from around here (Y/N)?');
+  //console.log('seattleOrigin:' + seattleOrigin);
+
+  if (seattleOrigin.toUpperCase() === 'Y'){
+    alert('Not Quite..');
+  } else {
+    alert('Appears Legitimate' + usernaamAntwoord);
+  }
+}
+waarVanDan();
+//Q2 Complete
+
 function howManyPetsQuestion(){
   //Question 6 in a loop
   for(var i=0; i<4; i++){
@@ -22,14 +48,15 @@ function howManyPetsQuestion(){
       alert('I know it seems a bit much...and it probably is BUT I don\'t care!');
       break;
     }
+    // Thanks to Krystian for helping me understand this
     // Q6 Content end
   }
   // Q6 loop complete
 }
 howManyPetsQuestion();
-// Question 6 Complete
+// Q6 Complete
 
-// Question 7 start
+// Q7 start
 for (var i=0; i<6; i++){
   // Question 7 array
   var favColorAnswer = prompt('What is Andre\'s favorite color?');
@@ -44,4 +71,4 @@ for (var i=0; i<6; i++){
   }
   // Q7 array end
 }
-//Q7 complete
+//Q7 Loop
