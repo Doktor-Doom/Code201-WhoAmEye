@@ -14,7 +14,7 @@ function wieBenJe(){
   var usernaamAntwoord = prompt('How\'s it going? What\'s your name?');
   // console.log('usernaamAntwoord :' + usernaamAntwoord);
 
-  alert('Cool Beans,' + usernaamAntwoord + 'hope you\'re having a good day');
+  alert('Cool Beans, ' + usernaamAntwoord + ' hope you\'re having a good day');
 }
 wieBenJe();
 //Q1 Function.. I'd like to add a time of day loop here to tailor the greeting to the time of day..
@@ -29,7 +29,7 @@ function waarVanDan(){
     alert('Not Quite..');
   } else {
     alert('Appears Legitimate' + usernaamAntwoord);
-  }
+  } //i need this alert to show when user says 'N'
 }
 waarVanDan();
 //Q2 Complete
