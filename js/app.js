@@ -72,6 +72,7 @@ function topShelf(){
   }
 }
 topShelf();
+//Q5 Complete
 
 function howManyPetsQuestion(){
   //Question 6 in a loop
@@ -111,3 +112,19 @@ for (var i=0; i<6; i++){
   // Q7 array end
 }
 //Q7 Loop
+
+
+//Q8 Origin
+
+function danceDance(){
+  for(var i=0; i<=3; i++){
+    var doIDance = prompt('Doe\'s he dance (y/n)?');
+    if (doIDance.toLowerCase() === 'y'){
+      alert ('I only do that to make my wife laugh..');
+    } else {
+      alert('only to make the wife laugh');
+    }
+  }
+}
+danceDance();
+//Q8 complete
