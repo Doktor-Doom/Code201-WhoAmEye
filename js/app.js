@@ -30,4 +30,18 @@ howManyPetsQuestion();
 // Question 6 Complete
 
 // Question 7 start
-// Question 7 array
+for (var i=0; i<6; i++){
+  // Question 7 array
+  var favColorAnswer = prompt('What is Andre\'s favorite color?');
+
+  var favColorArray = ['purple', 'green', 'neon pink', 'orange', 'navy blue'];
+
+  if(favColorAnswer === favColorArray[0] || favColorAnswer === favColorArray[1] ||favColorAnswer === favColorArray[2]){
+    alert('You got it!');
+    break;
+  } else {
+    alert('A Swing and A Miss.');
+  }
+  // Q7 array end
+}
+//Q7 complete
