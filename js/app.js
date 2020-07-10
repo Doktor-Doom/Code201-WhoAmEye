@@ -34,6 +34,19 @@ function waarVanDan(){
 waarVanDan();
 //Q2 Complete
 
+//Q3 Origin
+function film(){
+  var filmLover = prompt('Do I like movies (y/n)?');
+  //console.log('filmLover:' + filmLover);
+  if(filmLover.toLowerCase() === 'y'){
+    alert('Not too shabby.');
+  } else {
+    alert('Inconcievable!!');
+  }
+}
+film();
+//Q3 Complete
+
 function howManyPetsQuestion(){
   //Question 6 in a loop
   for(var i=0; i<4; i++){
