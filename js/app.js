@@ -29,7 +29,7 @@ function waarVanDan(){
     alert('Not Quite..');
   } else {
     alert('Appears Legitimate' + usernaamAntwoord);
-  } //i need this alert to show when user says 'N'
+  } //i need this alert to show when user says 'N' or a loop to try again if wrong
 }
 waarVanDan();
 //Q2 Complete
@@ -46,6 +46,32 @@ function film(){
 }
 film();
 //Q3 Complete
+
+//Q4 Origin
+function kin(){
+  var famFam = prompt('Does this guy have siblings (y/n) ?');
+  // console.log('famFam :' + famFam);
+
+  if (famFam.toLowerCase() === 'y'){
+    alert('Yep, Older sister.');
+  }else if(famFam.toLowerCase() === 'n'){
+    alert('she\'s small, but she still counts');
+  }
+}
+kin();
+//Q4 Completed
+
+//Q5 Origin
+function topShelf(){
+  var reach = prompt('Is he tall (y/n)?');
+  // console.log('reach : ' + reach);
+  if (reach.toLowerCase() === 'y'){
+    alert('I do reach the top shelf, yes.');
+  }else{
+    alert('If I was shorter I wouldnt have a hard time finding shirts with the right length sleeves');
+  }
+}
+topShelf();
 
 function howManyPetsQuestion(){
   //Question 6 in a loop
