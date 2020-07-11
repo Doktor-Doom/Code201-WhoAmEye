@@ -68,7 +68,7 @@ topShelf();
 
 function howManyPetsQuestion(){
 
-  for(var i = 0; i < 4; i ++){
+  for(var i = 0; i < 4; i ++){ // effectively edited how the inserted answered are interpreted
 
     var howManyPetsAnswer = prompt('How many pets does Andre want to have?');
     // console.log('howManyPetsAnswer :' + howManyPetsAnswer);
@@ -91,22 +91,24 @@ howManyPetsQuestion();
 function tooManyColors(){ //function declare
   for (var i=0; i<6; i++){
 
+    //6 attempts to find 4 colors.
     var favColorAnswer = prompt('What is Andre\'s favorite color?');
 
     var favColorArray = ['purple', 'green', 'neon pink', 'orange', 'navy blue'];
 
     if(favColorAnswer === favColorArray[0] || favColorAnswer === favColorArray[1] ||favColorAnswer === favColorArray[2]){
       alert('You got it!');
-      break;
+      break; // break to end loop is guessed correctly
     } else {
       alert('A Swing and A Miss.');
-    }
-  }
+    } 
+    alert('possible answers included purple, green, neon pink, orange, navy blue');
+  } // not sure what the next step here should be
 }
 tooManyColors(); //function call
 
 function danceDance(){
-  // for(var i=0; i<=3; i++)
+  // removed loop all together
   var doIDance = prompt('Doe\'s he dance (y/n)?');
   if (doIDance.toLowerCase() === 'y'){
     alert ('I only do that to make my wife laugh..');
@@ -116,4 +118,4 @@ function danceDance(){
 }
 danceDance();
 
-prompt('Thank\'s for stopping by,' + usernaamAntwoord);
+prompt('Thank\'s for stopping by,' + usernaamAntwoord); // added a prompt displaying username
