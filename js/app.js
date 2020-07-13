@@ -1,40 +1,32 @@
 'use strict';
-// console.log(..greetings)
-// Q1 ask for user's name, hey how's it going
-// Need 5 y/n questions
-// - Is Andre from Seattle, Washington
-// - Does Andre like to watch movies
-// - Is Andre an only child
-// - Is Andre tall, i reach all of the shelves
-// - Does Andre like to dance
+console.log(..greetings)
 
-// === global ===
 var usernaamAntwoord;
 
 function wieBenJe(){
-  usernaamAntwoord = prompt('How\'s it going? What\'s your name?'); //removed var
+  usernaamAntwoord = prompt('How\'s it going? What\'s your name?'); 
   console.log('usernaamAntwoord :' + usernaamAntwoord);
 
   alert('Cool Beans, ' + usernaamAntwoord + ' hope you\'re having a good day');
 }
 wieBenJe();
-//Q1 Function.. I'd like to add a time of day loop here to tailor the greeting to the time of day..
+
 
 function waarVanDan(){
   var seattleOrigin = prompt('Am I from around here (Y/N)?');
-  //console.log('seattleOrigin:' + seattleOrigin);
+  console.log('seattleOrigin:' + seattleOrigin);
 
   if (seattleOrigin.toUpperCase() === 'Y'){
     alert('Not Quite..');
   } else {
     alert('Appears Legitimate ' + usernaamAntwoord);
-  } //i need this alert to show when user says 'N' or a loop to try again if wrong
+  } 
 }
 waarVanDan();
 
 function film(){
   var filmLover = prompt('Do I like movies (y/n)?');
-  //console.log('filmLover:' + filmLover);
+  console.log('filmLover:' + filmLover);
   if(filmLover.toLowerCase() === 'y'){
     alert('Not too shabby.');
   } else {
@@ -45,7 +37,7 @@ film();
 
 function kin(){
   var famFam = prompt('Does this guy have siblings (y/n) ?');
-  // console.log('famFam :' + famFam);
+  console.log('famFam :' + famFam);
 
   if (famFam.toLowerCase() === 'y'){
     alert('Yep, Older sister.');
@@ -57,7 +49,7 @@ kin();
 
 function topShelf(){
   var reach = prompt('Is he tall (y/n)?');
-  // console.log('reach : ' + reach);
+  console.log('reach : ' + reach);
   if (reach.toLowerCase() === 'y'){
     alert('I do reach the top shelf, yes.');
   }else{
@@ -68,10 +60,10 @@ topShelf();
 
 function howManyPetsQuestion(){
 
-  for(var i = 0; i < 4; i ++){ // effectively edited how the inserted answered are interpreted
+  for(var i = 0; i < 4; i ++){ 
 
     var howManyPetsAnswer = prompt('How many pets does Andre want to have?');
-    // console.log('howManyPetsAnswer :' + howManyPetsAnswer);
+    console.log('howManyPetsAnswer :' + howManyPetsAnswer);
 
     if (howManyPetsAnswer > 30){
       alert('That\'s just crazy, maybe a bit less! Try again.');
@@ -88,27 +80,22 @@ function howManyPetsQuestion(){
 }
 howManyPetsQuestion();
 
-function tooManyColors(){ //function declare
+function tooManyColors(){ 
   for (var i=0; i<6; i++){
 
-    //6 attempts to find 4 colors.
     var favColorAnswer = prompt('What is Andre\'s favorite color?');
 
     var favColorArray = ['purple', 'green', 'neon pink', 'orange', 'navy blue'];
 
     if(favColorAnswer === favColorArray[0] || favColorAnswer === favColorArray[1] ||favColorAnswer === favColorArray[2]){
       alert('You got it!');
-      break; // break to end loop is guessed correctly
     } else {
       alert('A Swing and A Miss.');
     } 
     alert('possible answers included purple, green, neon pink, orange, navy blue');
-  } // not sure what the next step here should be
 }
-tooManyColors(); //function call
 
 function danceDance(){
-  // removed loop all together
   var doIDance = prompt('Doe\'s he dance (y/n)?');
   if (doIDance.toLowerCase() === 'y'){
     alert ('I only do that to make my wife laugh..');
@@ -118,4 +105,4 @@ function danceDance(){
 }
 danceDance();
 
-prompt('Thank\'s for stopping by,' + usernaamAntwoord); // added a prompt displaying username
+prompt('Thank\'s for stopping by,' + usernaamAntwoord); 
